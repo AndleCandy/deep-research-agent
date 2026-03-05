@@ -1,6 +1,7 @@
 # Deep Research Agent
 
 一个可落地的 AI 研究助手项目：从问题拆解、搜索检索、证据追踪到报告生成，并内置可持续演进的 benchmark / LLM Judge / 人工复核流程。
+![Recording 2026-03-05 at 22 30 34](https://github.com/user-attachments/assets/cb0b8e2e-4584-4624-9ead-605e9bd26500)
 
 ## Why This Project
 
