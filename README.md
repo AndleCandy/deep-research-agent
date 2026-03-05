@@ -1,14 +1,14 @@
 # Deep Research Agent
 
-一个可落地的 AI 研究助手项目：从问题拆解、搜索检索、证据追踪到报告生成，并内置可持续演进的 benchmark / LLM Judge / 人工复核流程。
+Deep Research Agent 是一个专为复杂课题设计的自主深度调研助手。它不仅是简单的对话接口，更是一个具备“思考-搜索-整合”闭环能力的自动化研究员
+支持终端和网页两种模式：
 ![Recording 2026-03-05 at 22 30 34](https://github.com/user-attachments/assets/cb0b8e2e-4584-4624-9ead-605e9bd26500)
 
 ## Why This Project
 
-- 面向真实场景：不是单轮问答，而是完整 research workflow。
-- 面向工程质量：支持自动评测、低成本 LLM Judge、人工复核闭环。
+- 面向真实场景：不是单轮问答，而是完整research workflow。
+- 面向工程质量：支持自动评测、低成本LLM Judge、人工复核闭环。
 - 面向面试展示：结构清晰、可复现实验、可解释指标。
-
 
 ## Core Features
 
@@ -76,8 +76,6 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-仅在 `.env` 中填写你自己的密钥，**不要提交到 Git**。
-
 ### 3. Run Agent (CLI)
 
 ```bash
@@ -121,21 +119,6 @@ python run_benchmark.py \
   - `raw_outputs.jsonl`
   - `human_review_queue.jsonl`
   - `human_review_form.md`
-
-## Security & Privacy
-
-- 项目中不包含任何个人 API Key。
-- 所有密钥均通过环境变量注入（`.env` 本地使用）。
-- `.gitignore` 已默认忽略：`.env`、`benchmark_results/`、`__pycache__/`。
-
-## For Recruiters
-
-这个项目可直接体现以下能力：
-
-- Agent workflow 设计（LangGraph 状态机）
-- LLM 工程化（多模型适配、参数化、失败回退）
-- 评测体系设计（自动化 + LLM Judge + 人工复核）
-- 成本与效果平衡（触发策略、抽样评审、短上下文 Judge）
 
 ## Roadmap
 
