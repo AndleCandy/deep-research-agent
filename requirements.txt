@@ -1,0 +1,21 @@
+# 自主研究智能体 - 依赖包清单
+
+# 核心框架
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-core>=0.3.0
+
+# 数据处理
+pydantic>=2.0.0
+typing-extensions>=4.8.0
+
+# 工具和实用程序
+requests>=2.31.0
+beautifulsoup4>=4.12.0  # 用于网页解析
+python-dotenv>=1.0.0    # 环境变量管理
+
+# 可选：增强功能
+tavily-python>=0.3.0    # Tavily 搜索 API（推荐）
+duckduckgo-search>=3.9.0  # DuckDuckGo 搜索（免费替代）
+newspaper3k>=0.2.8      # 文章内容提取
